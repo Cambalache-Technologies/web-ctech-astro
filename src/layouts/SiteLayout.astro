@@ -1,11 +1,14 @@
+---
+const { title, global, style } = Astro.props;
+---
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8" />
-    <link rel="stylesheet" type="text/css" href="styles/globalsindex.css" />
-    <link rel="stylesheet" type="text/css" href="styles/styleindex.css" />
+    <link rel="stylesheet" type="text/css" href=`styles/${global}` />
+    <link rel="stylesheet" type="text/css" href=`styles/${style}` />
     <script src="js/script.js" defer></script>
-    <title>Cambalache Technologies</title>
+    <title>{title}</title>
     <link rel="icon" href="img/favicon.png" type="image/png">
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-KVQD6PVNXQ"></script>
