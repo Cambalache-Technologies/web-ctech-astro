@@ -526,7 +526,7 @@ import "@styles/_styleindex.css";
                 
                 <script>
                   // Función para animar el conteo
-                  function animateCount(targetNumber, duration, element) {
+                  function animateCount(targetNumber: any, duration: any, element: any) {
                     let currentNumber = 0;
                     const increment = targetNumber / (duration / 15); // Incremento basado en la duración
                 
@@ -543,8 +543,8 @@ import "@styles/_styleindex.css";
                   }
                 
                   // Función para activar el conteo cuando el elemento es visible
-                  function startCountingOnVisible(entries, observer) {
-                    entries.forEach(entry => {
+                  function startCountingOnVisible(entries: any, observer: any) {
+                    entries.forEach((entry: any) => {
                       if (entry.isIntersecting) {
                         // Inicia el conteo solo si el elemento es visible
                         const target = entry.target;
